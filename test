@@ -1,0 +1,39 @@
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="WebApplication6.WebForm1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="Scripts/table.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.8.2.js"></script>
+    <script src="Scripts/jspdf.js"></script>
+    <script src="Scripts/from_html.js"></script>
+    <script src="Scripts/split_text_to_size.js"></script>
+    <script src="Scripts/standard_fonts_metrics.js"></script>
+    
+
+    <style type="text/css">
+        .FixedHeader {
+            position: absolute;
+            font-weight: bold;
+        }     
+    </style>   
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+       
+    </div>
+        <div id="Grid" runat="server">
+            
+            <asp:PlaceHolder ID="PlaceHolder1" runat="server"></asp:PlaceHolder>
+          
+        </div>
+        <br />
+       <%--<asp:HiddenField ID="hfGridHtml" runat="server" />--%>
+         <asp:Button ID="Button1" OnClick="Button1_Click" runat="server" Text="Button" />
+
+    </form>
+</body>
+</html>
